@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Climate Custodians (YCC)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="nav">
+      <div class="nav-left">
+        <img src="images/logo.png" alt="YCC Logo" class="logo" id="logoImg">
+        <span class="brand">Youth Climate Custodians</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-donate" id="donateBtn" href="https://example.com/donate" target="_blank">Donate</a>
+        <button class="btn btn-primary" id="volBtn">Volunteer</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <button class="btn" id="mode-toggle">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <h1>Youth Climate Custodians (YCC)</h1>
+      <p class="sub">Empowering local communities to act against climate change — one neighbourhood at a time.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn">Our Projects</a>
+        <a href="#gallery" class="btn btn-muted">See Community Actions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2>About YCC</h2>
+    <p class="lead">
+      Youth Climate Custodians (YCC) is a youth-led, community-driven organization focused on education,
+      grassroots action and local resilience. We guide communities to reduce waste, plant trees, conserve water
+      and prepare for climate impacts.
+    </p>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section id="mission" class="section alt container">
+    <div class="about mission-vision">
+      <div>
+        <h3>Mission</h3>
+        <p>To empower youth and communities through education, leadership and practical climate action.</p>
+      </div>
+      <div>
+        <h3>Vision</h3>
+        <p>A climate-resilient future where every community protects its environment, biodiversity and people.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="section container">
+    <h2>Meet Our Team</h2>
+    <div class="team-members" id="teamGrid">
+      <div class="member">
+        <img src="image-member1.jpg" alt="Member One">
+        <h3>Member One</h3>
+        <p>Founder / Executive Director</p>
+      </div>
+      <div class="member">
+        <img src="image-member2.jpg" alt="Member Two">
+        <h3>Member Two</h3>
+        <p>Climate Education Lead</p>
+      </div>
+      <div class="member">
+        <img src="image-member3.jpg" alt="Member Three">
+        <h3>Member Three</h3>
+        <p>Community Action Coordinator</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section alt container">
+    <h2>Our Projects</h2>
+    <div class="projects-grid" id="projectsGrid">
+      <article class="project-card">
+        <h4>Tree Planting Drive</h4>
+        <p>Community tree-planting days to restore urban green cover.</p>
+      </article>
+      <article class="project-card">
+        <h4>Plastic Waste to Value</h4>
+        <p>Workshops teaching how to reuse PET waste for useful products.</p>
+      </article>
+      <article class="project-card">
+        <h4>Water Conservation Clinics</h4>
+        <p>Training on rainwater harvesting and low-cost water-saving techniques.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section container alt">
+    <h2>Community Action Gallery</h2>
+    <div class="uploader">
+      <input type="file" id="imageUpload" accept="image/*">
+      <input type="text" id="imageCaption" placeholder="Add a caption (optional)">
+      <button class="btn" id="postImageBtn">Post Picture</button>
+    </div>
+    <div id="imageGallery" class="masonry"></div>
+  </section>
+
+  <!-- VIDEO STORIES -->
+  <section id="videos" class="section container">
+    <h2>Video Stories</h2>
+    <div class="uploader">
+      <input type="file" id="videoUpload" accept="video/*">
+      <input type="text" id="videoCaption" placeholder="Add a caption (optional)">
+      <button class="btn" id="postVideoBtn">Post Video</button>
+    </div>
+    <div id="videoGallery" class="masonry video-masonry"></div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section container">
+    <h2>Blog & News</h2>
+    <div class="uploader">
+      <input type="text" id="postTitle" placeholder="Post title">
+      <textarea id="postContent" rows="3" placeholder="Write the story or update"></textarea>
+      <input type="file" id="postImage" accept="image/*">
+      <button class="btn" id="createPostBtn">Publish Post</button>
+    </div>
+    <div id="postsList" class="posts-list"></div>
+  </section>
+
+  <!-- REPORTS -->
+  <section id="reports" class="section alt container">
+    <h2>Reports & Resources</h2>
+    <ul class="reports-list">
+      <li><a href="reports/community-guide.pdf" target="_blank">Community Climate Action Guide (PDF)</a></li>
+      <li><a href="reports/rainwater-guide.pdf" target="_blank">Rainwater Harvesting Manual (PDF)</a></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2>Contact & Follow Us</h2>
+    <p>Email: <a href="mailto:youthclimatecustodians@gmail.com">youthclimatecustodians@gmail.com</a></p>
+    <p>Phone: +234 000 000 0000</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Youth Climate Custodians</div>
+      <div class="footer-links">
+        <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VOLUNTEER MODAL -->
+  <div class="modal" id="volModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h3>Volunteer with YCC</h3>
+      <form id="volForm">
+        <input type="text" id="volName" placeholder="Full name" required>
+        <input type="email" id="volEmail" placeholder="Email" required>
+        <input type="text" id="volPhone" placeholder="Phone (optional)">
+        <textarea id="volMsg" rows="3" placeholder="Why do you want to volunteer?"></textarea>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div id="volResponse" class="muted small"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
